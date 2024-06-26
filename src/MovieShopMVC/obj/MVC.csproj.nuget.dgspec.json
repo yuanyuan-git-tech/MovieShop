@@ -1,0 +1,220 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/MVC/MVC.csproj": {}
+  },
+  "projects": {
+    "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/ApplicationCore/ApplicationCore/ApplicationCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/ApplicationCore/ApplicationCore/ApplicationCore.csproj",
+        "projectName": "ApplicationCore",
+        "projectPath": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/ApplicationCore/ApplicationCore/ApplicationCore.csproj",
+        "packagesPath": "/Users/yuanyuanzhao/.nuget/packages/",
+        "outputPath": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/ApplicationCore/ApplicationCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yuanyuanzhao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/yuanyuanzhao/.nuget/packages/",
+        "outputPath": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yuanyuanzhao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/ApplicationCore/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/ApplicationCore/ApplicationCore/ApplicationCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0-preview.5.24306.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/MVC/MVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/MVC/MVC.csproj",
+        "projectName": "MVC",
+        "projectPath": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/MVC/MVC.csproj",
+        "packagesPath": "/Users/yuanyuanzhao/.nuget/packages/",
+        "outputPath": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/MVC/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yuanyuanzhao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/ApplicationCore/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/ApplicationCore/ApplicationCore/ApplicationCore.csproj"
+              },
+              "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/yuanyuanzhao/Antra/HTML_CSS_JS/MovieShop/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-preview.5.24306.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0-preview.5.24306.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-preview.5.24306.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

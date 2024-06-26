@@ -1,0 +1,69 @@
+@model ApplicationCore.Helpers.PagedResultSet<ApplicationCore.Models.MovieCardModel>
+
+<div class="rounded">
+    <div class="container-fluid bg-light">
+        <div class="row">
+            @* ReSharper disable once CSharpWarnings::CS8602 *@
+            @foreach (var movie in Model?.Data)
+            {
+            <div class="col-6 col-lg-3 col-sm-4 col-xl-2">
+                @*<partial name="MovieCard" model="movie"/>*@
+                @await Html.PartialAsync("_MovieCard", movie)
+            </div>
+            }
+
+        </div>
+    </div>
+</div>
+@* startPage and endPage determine which pages are displayed around the current page.  *@
+@* Here, we display the current page, two pages before it, and two pages after it *@
+@{
+var startPage = Math.Max(1, Model.PageIndex - 2);
+var endPage = Math.Min(Model.TotalPages, Model.PageIndex + 2);
+var prevDisabled = Model.PageIndex <= 1 ? "disabled" : "";
+var nextDisabled = Model.PageIndex >= Model.TotalPages ? "disabled" : "";
+}
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <!-- Previous Button -->
+        <li class="page-item @prevDisabled">
+            <a class="page-link" asp-action="Genres" asp-route-pageNumber="@(Model.PageIndex - 1)">Previous</a>
+        </li>
+
+        <!-- Display leading ellipsis if needed -->
+        @if (startPage > 1)
+        {
+        <li class="page-item">
+            <a class="page-link" asp-action="Genres" asp-route-pageNumber="1">1</a>
+        </li>
+        <li class="page-item disabled">
+            <span class="page-link">...</span>
+        </li>
+        }
+
+        <!-- Page Numbers -->
+        @for (var i = startPage; i <= endPage; i++)
+        {
+        <li class="page-item @(i == Model.PageIndex ? "active" : "")">
+            <a class="page-link" asp-action="Genres" asp-route-pageNumber="@i">@i</a>
+        </li>
+        }
+
+        <!-- Display trailing ellipsis if needed -->
+        @if (endPage < Model.TotalPages)
+        {
+        <li class="page-item disabled">
+            <span class="page-link">...</span>
+        </li>
+        <li class="page-item">
+            <a class="page-link" asp-action="Genres" asp-route-pageNumber="@Model.TotalPages">@Model.TotalPages</a>
+        </li>
+        }
+
+        <!-- Next Button -->
+        <li class="page-item @nextDisabled">
+            <a class="page-link" asp-action="Genres" asp-route-pageNumber="@(Model.PageIndex + 1)">Next</a>
+        </li>
+    </ul>
+</nav>
